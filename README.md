@@ -44,4 +44,4 @@ The Online Shopping Cart System is a web-based application developed to simplify
 ---
 
 ## 📎 GitHub Repository
-(https://github.com/riddhi2911/Online Shopping Cart System)
+(https://github.com/riddhi2911/Online-Shopping-Cart-System)
