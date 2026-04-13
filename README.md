@@ -22,10 +22,7 @@ The Online Shopping Cart System is a web-based application developed to simplify
 - 💻 C#  
 - ⚙️ .NET Framework  
 - 🧰 Microsoft Visual Studio  
-- 🗄️ SQL Server (if used)  
-
----
-
+- 🗄️ SQL Server 
 
 ---
 
