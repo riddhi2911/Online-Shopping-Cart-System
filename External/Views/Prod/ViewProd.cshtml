@@ -1,0 +1,32 @@
+﻿@model System.Data.DataTable;
+@{
+    ViewData["Title"] = "ViewProd";
+}
+
+<h1>View Products</h1>
+<table cellpadding="30" border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Add</th>
+    </tr>
+    @if(Model.Rows.Count > 0)
+    {
+        @foreach (System.Data.DataRow row in Model.Rows)
+        {
+            <tr>
+                <td>@row["Pid"]</td>
+                <td>@row["Pname"]</td>
+                <td>@row["Pprice"]</td>
+                <td><a href="/Prod/AddProd?id=@row["Pid"]&pri=@row["Pprice"]">Add</a></td>       
+            </tr>
+        }
+    } else
+    {
+        <h5>NO DATA FOUND !!</h5>
+    }
+     <a href="/Customer/Dashboard">Dashboard</a>
+
+</table>
+

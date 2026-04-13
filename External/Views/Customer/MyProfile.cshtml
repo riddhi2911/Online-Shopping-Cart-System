@@ -1,0 +1,19 @@
+﻿@model System.Data.DataTable;
+@{
+    ViewData["Title"] = "MyProfile";
+}
+
+<h1>MyProfile</h1>
+@foreach(System.Data.DataRow row in Model.Rows)
+{
+    <h4>Name : @row["Cname"]</h4>
+    <h4>Email : @row["Cemail"]</h4>
+    <h4>Password : @row["CPassword"]</h4>
+    <h4>Address : @row["Cadd"]</h4>
+    <h4>Gender : @row["Cgender"]</h4>
+}
+<br /><br />
+<a href="/Customer/UpdateProf">Update Profile</a>
+<br />
+<br />
+<a href="/Customer/Dashboard">Dashboard</a>

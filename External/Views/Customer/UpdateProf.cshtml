@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "UpdateProf";
+}
+
+<h1>UpdateProf</h1>
+<form asp-action="UpdateProf" asp-controller="Customer" method="post">
+    Name : <input type="text" name="Cname" /><br /><br />
+    Email : <input type="email" name="Cemail" /><br /><br />
+    Password : <input type="password" name="CPassword" /><br /><br />
+    Address : <textarea rows="5" cols="40" name="Cadd"></textarea>
+    <br /><br />
+    Gender : <select name="Cgender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <br /><br />
+    <input type="submit" value="Submit" /><br /><br />
+
+</form>
